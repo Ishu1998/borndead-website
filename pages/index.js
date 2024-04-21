@@ -1,5 +1,6 @@
-import Head from "next/head";
 import React from "react";
+import Head from "next/head";
+import Script from "next/script";
 
 export default function Home() {
   const headContent = () => {
@@ -54,8 +55,8 @@ export default function Home() {
     <React.Fragment>
       {headContent()}
       {pageContent()}
-      <script src='/js/imagesloaded.pkgd.min.js'></script>
-      <script src='/js/demo.js'></script>
+      <Script src='/js/imagesloaded.pkgd.min.js'></Script>
+      <Script src='/js/demo.js'></Script>
     </React.Fragment>
   );
 }
