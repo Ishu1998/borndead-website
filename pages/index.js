@@ -3,15 +3,51 @@ import Head from "next/head";
 import Script from "next/script";
 
 export default function Home() {
+  const seoContent = () => {
+    return (
+      <React.Fragment>
+        <meta name='description' content='Game Studio' />
+        <meta name='keywords' content='game, developer, india, horror' />
+        <meta name='author' content='BornDead Studios' />
+
+        {/* <!-- Primary Meta Tags --> */}
+        <title>BornDead Studios</title>
+        <meta name='title' content='BornDead Studios' />
+        <meta name='description' content='Game Studio' />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://www.borndeadstudios.com/' />
+        <meta property='og:title' content='BornDead Studios' />
+        <meta property='og:description' content='Game Studio' />
+        <meta
+          property='og:image'
+          content='https://www.borndeadstudios.com/seo.jpg'
+        />
+
+        {/* <!-- Twitter --> */}
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta
+          property='twitter:url'
+          content='https://www.borndeadstudios.com/'
+        />
+        <meta property='twitter:title' content='BornDead Studios' />
+        <meta property='twitter:description' content='Game Studio' />
+        <meta
+          property='twitter:image'
+          content='https://www.borndeadstudios.com/seo.jpg'
+        />
+      </React.Fragment>
+    );
+  };
+
   const headContent = () => {
     return (
       <Head>
         <meta charSet='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <title>BornDead Studios</title>
-        <meta name='description' content='Game Studio' />
-        <meta name='keywords' content='game, developer, india, horror' />
-        <meta name='author' content='Codrops' />
+        {seoContent()}
+
         <link rel='shortcut icon' href='favicon.ico' />
         {/* <link
           href='https://fonts.googleapis.com/css?family=IM+Fell+English|Playfair+Display:900'
