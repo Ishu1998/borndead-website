@@ -48,7 +48,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         {seoContent()}
 
-        <link rel='shortcut icon' href='favicon.ico' />
+        <link rel='shortcut icon' href='favicon.png' />
         {/* <link
           href='https://fonts.googleapis.com/css?family=IM+Fell+English|Playfair+Display:900'
           rel='stylesheet'
